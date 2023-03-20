@@ -42,9 +42,11 @@ const questions = [
         message: "Enter your gitHub username"
     },
     {
+        // type: 'checkbox',
         type: 'input',
         name: 'license',
-        message: "Please enter your project's license."
+        message: "Please enter your project's license.",
+        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'Unlicense']
     }
 ];
 
