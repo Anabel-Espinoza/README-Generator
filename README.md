@@ -1,10 +1,10 @@
-# g
+# asasd
 
-![License](https://img.shields.io/badge/License-Unlicensed-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description
 
-g
+as
 
 ## Table of Contents
 
@@ -15,17 +15,17 @@ g
 
 ## Instalation
 
-g
+asda
 
 ## Usage
 
-Application link: g
-g
+Application link: as
+sasd
 
 ## Credits
 
-Created by: g
-Collaborations: g
+Created by: as
+Collaborations: asa
 
 ## License
-    Project under Unlicensed license.
+Project under MIT license.
