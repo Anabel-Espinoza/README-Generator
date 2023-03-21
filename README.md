@@ -32,10 +32,12 @@ Video of the application functionality:
 - Created by: Anabel Espinoza (https://github.com/Anabel-Espinoza)
 
 - Sources: 
-* 'Professional README Guide' (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-* 'Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
-* 'How to Create Interactive Command-Line Prompts with Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
-* 'Open source license usage on GitHub.com' (https://github.blog/2015-03-09-open-source-license-usage-on-github-com/)
+    * 'Professional README Guide' (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+    * 'Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
+    * 'How to Create Interactive Command-Line Prompts with Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
+    * 'Open source license usage on GitHub.com' (https://github.blog/2015-03-09-open-source-license-usage-on-github-com/)
+
+- npm: Inquirer v8.2.4
 
 ## License
 Project under MIT license.

@@ -23,10 +23,15 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'contribute',
+        message: "Enter guidelines for developers to contribute to your project.",
+   } ,
+    {
+        type: 'input',
         name: 'tests',
         message: "How can you run tests for your application",
         default: 'N/A'
-    },
+   } ,
     {
         type: 'input',
         name: 'usage',
@@ -45,14 +50,23 @@ const questions = [
     {
         type: 'input',
         name: 'creator',
-        message: "Enter your gitHub username"
+        message: 'Enter your name.'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address.'
+    },
+    {
+        type: 'input',
+        name: 'gitHub',
+        message: 'Enter your gitHub username.'
     },
     {
         type: 'list',
-        // type: 'input',
         name: 'license',
         message: "Please enter your project's license.",
-        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'Other', 'Unlicensed']
+        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD_3--clause', 'Unlicensed']
     }
 ];
 
@@ -66,8 +80,9 @@ function writeToFile(fileName, data) {
 
 // Initialize app
 function init() {
-    inquirer.prompt(questions)
-.then((response) =>writeToFile('README-Output.md', response))
+    inquirer
+    .prompt(questions)
+    .then((response) => writeToFile('README-Output.md', response))
 }
 
 // Start app

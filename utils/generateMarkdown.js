@@ -1,6 +1,6 @@
-// Function that returns a license badge except when user selected: Unlicensed OR Other
+// Function that returns a license badge except when user selected: Unlicensed
 function renderLicenseBadge(license) {
-  if (license === 'Unlicensed' || license === "Other") {
+  if (license === 'Unlicensed') {
     return ''
   } else {
     return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
@@ -37,13 +37,15 @@ ${data.projectDesc}
 
 ## Table of Contents
 
-- [Instalation](#installation)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Tests](#tests)
 ${renderLicenseLink(data.license)}
+- [How to Contribute](#contribute)
+- [Tests](#tests)
+- [Questions](#questions)
 
-## Instalation
+## Installation
 
 ${data.installation}
 
@@ -52,16 +54,25 @@ ${data.installation}
 Application link/Commmand to run: ${data.link}
 ${data.usage}
 
+## Credits
+
+Created by: ${data.creator} (https://github.com/${data.gitHub})
+Collaborations: ${data.credits}
+
+${renderLicenseSection(data.license)}
+
+## How to Contribute
+
+${data.contribute}
+
 ## Tests
 
 ${data.tests}
 
-## Credits
+## Questions
 
-Created by: ${data.creator}
-Collaborations: ${data.credits}
-
-${renderLicenseSection(data.license)}
+Please submit your questions or comments to my email ${data.email}.
+Access my gitHub profile here: https://github.com/${data.gitHub}
 `
 }
 
