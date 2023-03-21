@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== 'Unlicense') {
+  if (license !== 'Unlicensed' || license !== "Other") {
     return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
   } else {
     return ''
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'Unlicense') {
+  if (license !== 'Unlicensed' || license !== "Other") {
     return '- [License](#license)'
   } else {
     return ''
@@ -21,9 +21,9 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== 'Unlicense') {
+  if (license !== 'Unlicensed' || license !== "Other") {
     return `## License
-    Project under: ${license} license.`
+    Project under ${license} license.`
   } else {
     return ''
   }
@@ -33,7 +33,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.projectName}
 
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -44,7 +44,7 @@ ${data.projectDesc}
 - [Instalation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-${renderLicenseLink(license)}
+${renderLicenseLink(data.license)}
 
 ## Instalation
 

@@ -42,18 +42,18 @@ const questions = [
         message: "Enter your gitHub username"
     },
     {
-        // type: 'checkbox',
-        type: 'input',
+        type: 'list',
+        // type: 'input',
         name: 'license',
         message: "Please enter your project's license.",
-        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'Unlicense'],
-        default: 'MIT'
+        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'Other', 'Unlicensed']
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', generateMarkdown.generateMarkdown(inquirer), (err) =>
+    console.log('license:', data.license)
+    fs.writeFile('README.md', generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log('Success! README file has been created') 
     )
 }
@@ -61,6 +61,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
+.then((response) =>writeToFile('README.md', response))
 }
 
 // Function call to initialize app
