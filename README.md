@@ -4,7 +4,7 @@
 
 ## Description
 
-This README Generator helps the user to create a complete README file to add to the project. It requests user input for all the required sections of a complete README file, helping the user  not to forget any important sections.
+This README Generator helps the user to create a complete README file to add to the project. It requests user input for all the required sections of a complete README file, helping the user not to forget any important sections.
 
 ## Table of Contents
 
@@ -25,11 +25,15 @@ To start the application, user must enter "npm index".
 After the user starts the application, they must answer to the prompted requirements to be able to generate a complete README file. After the last question has been asnwered, a message will appear in the terminal, letting the user know the file has been created.
 
 Video of the application functionality:
-![Application Functionality](./assets/)
+![Application Functionality](https://drive.google.com/file/d/1EM3DxXIcf_chmocYBzZoF69xbA52QeBJ/view)
 
 ## Credits
 
 - Created by: Anabel Espinoza (https://github.com/Anabel-Espinoza)
+
+- Starting Code provided by GA Tech Bootcamp. 
+
+- Coding guidance: Mini-Project NodeJS unit(Generate HTML file from user input).
 
 - Sources: 
     * 'Professional README Guide' (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)

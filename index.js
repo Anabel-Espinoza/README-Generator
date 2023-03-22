@@ -23,29 +23,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribute',
-        message: "Enter guidelines for developers to contribute to your project.",
-   } ,
-    {
-        type: 'input',
-        name: 'tests',
-        message: "How can you run tests for your application",
-        default: 'N/A'
-   } ,
+        name: 'link',
+        message: "Provide the link to use/download your project."
+    }, 
     {
         type: 'input',
         name: 'usage',
         message: "Provide instructions or examples to use your project."
-    },
-    {
-        type: 'input',
-        name: 'link',
-        message: "Provide the link to use/download your project."
-    },
-    {
-        type: 'input',
-        name: 'credits',
-        message: "List collaborations, third-party assets, and tutorials used."
     },
     {
         type: 'input',
@@ -61,6 +45,22 @@ const questions = [
         type: 'input',
         name: 'gitHub',
         message: 'Enter your gitHub username.'
+    },
+    {
+        type: 'input',
+        name: 'contribute',
+        message: "Enter guidelines for developers to contribute to your project.",
+   } ,
+    {
+        type: 'input',
+        name: 'tests',
+        message: "How can you run tests for your application",
+        default: 'N/A'
+   } ,
+    {
+        type: 'input',
+        name: 'credits',
+        message: "List collaborations, third-party assets, and tutorials used."
     },
     {
         type: 'list',

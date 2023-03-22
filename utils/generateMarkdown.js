@@ -40,10 +40,10 @@ ${data.projectDesc}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-${renderLicenseLink(data.license)}
 - [How to Contribute](#contribute)
 - [Tests](#tests)
 - [Questions](#questions)
+${renderLicenseLink(data.license)}
 
 ## Installation
 
@@ -59,8 +59,6 @@ ${data.usage}
 Created by: ${data.creator} (https://github.com/${data.gitHub})
 Collaborations: ${data.credits}
 
-${renderLicenseSection(data.license)}
-
 ## How to Contribute
 
 ${data.contribute}
@@ -73,6 +71,9 @@ ${data.tests}
 
 Please submit your questions or comments to my email ${data.email}.
 Access my gitHub profile here: https://github.com/${data.gitHub}
+
+${renderLicenseSection(data.license)}
+
 `
 }
 
