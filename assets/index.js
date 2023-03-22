@@ -66,14 +66,14 @@ const questions = [
         type: 'list',
         name: 'license',
         message: "Please enter your project's license.",
-        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD_3--clause', 'Unlicensed']
+        choices: ['MIT', 'GPLv2', 'Apache_2.0', 'GPLv3', 'BSD_3--clause', 'Unlicensed']
     }
 ];
 
 // Write README file
 function writeToFile(fileName, data) {
     console.log('license:', data.license)
-    fs.writeFile('README-Output.md', generateMarkdown(data), (err) =>
+    fs.writeFile('README.md', generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log(`Success! README file has been created: ${fileName}`) 
     )
 }
@@ -82,7 +82,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt(questions)
-    .then((response) => writeToFile('README-Output.md', response))
+    .then((response) => writeToFile('README.md', response))
 }
 
 // Start app

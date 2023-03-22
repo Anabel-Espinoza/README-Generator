@@ -1,18 +1,29 @@
 // Function that returns a license badge except when user selected: Unlicensed
 function renderLicenseBadge(license) {
-  if (license === 'Unlicensed') {
-    return ''
-  } else {
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
-  } 
+  switch (license) {
+    case 'Unlicensed':
+      return ''
+      break
+    case 'MIT':
+      return `\n![License: MIT](https://img.shields.io/badge/License-${license}-yellow.svg)`
+      break
+    case 'GPLv2' || 'Apache_2.0' || 'GPLv3' || 'BSD_3--clause':
+      return `\n![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  }
 }
+  // if (license === 'Unlicensed') {
+  //   return ''
+  // } else {
+  //   return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  // } 
+
 
 // Function returns the license link for Table of Contents EXCEPT when user selects: Unlicensed.
 function renderLicenseLink(license) {
   if (license === 'Unlicensed') {
     return ''
   } else {
-    return '- [License](#license)'
+    return `\n- [License](#license)`
   }
 }
 
@@ -21,14 +32,14 @@ function renderLicenseSection(license) {
   if (license === 'Unlicensed') {
     return ''
   } else {
-    return `## License
-Project under ${license} license.`  }
+    return `\n## License
+    
+Project under ${license} license.\n`  }
 }
 
 // Generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectName}
-
 ${renderLicenseBadge(data.license)}
 
 ## Description
@@ -39,11 +50,10 @@ ${data.projectDesc}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Credits](#credits) ${renderLicenseLink(data.license)}
 - [How to Contribute](#contribute)
 - [Tests](#tests)
 - [Questions](#questions)
-${renderLicenseLink(data.license)}
 
 ## Installation
 
@@ -58,7 +68,7 @@ ${data.usage}
 
 Created by: ${data.creator} (https://github.com/${data.gitHub})
 Collaborations: ${data.credits}
-
+${renderLicenseSection(data.license)}
 ## How to Contribute
 
 ${data.contribute}
@@ -71,9 +81,6 @@ ${data.tests}
 
 Please submit your questions or comments to my email ${data.email}.
 Access my gitHub profile here: https://github.com/${data.gitHub}
-
-${renderLicenseSection(data.license)}
-
 `
 }
 
