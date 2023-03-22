@@ -66,7 +66,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: "Please enter your project's license.",
-        choices: ['MIT', 'GPLv2', 'Apache_2.0', 'GPLv3', 'BSD_3--clause', 'Unlicensed']
+        choices: ['MIT', 'GPLv2', 'Apache_2.0', 'GPLv3', 'BSD_3--Clause', 'Unlicensed']
     }
 ];
 

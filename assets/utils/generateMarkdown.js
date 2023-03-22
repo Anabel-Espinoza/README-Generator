@@ -1,23 +1,17 @@
 // Function that returns a license badge except when user selected: Unlicensed
 function renderLicenseBadge(license) {
   switch (license) {
-    case 'Unlicensed':
+    case 'Unlicensed': // NO license badge
       return ''
       break
-    case 'MIT':
+    case 'MIT': // Yellow badge
       return `\n![License: MIT](https://img.shields.io/badge/License-${license}-yellow.svg)`
       break
-    case 'GPLv2' || 'Apache_2.0' || 'GPLv3' || 'BSD_3--clause':
+    default: // Blue badges
       return `\n![License](https://img.shields.io/badge/License-${license}-blue.svg)`
   }
 }
-  // if (license === 'Unlicensed') {
-  //   return ''
-  // } else {
-  //   return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
-  // } 
-
-
+ 
 // Function returns the license link for Table of Contents EXCEPT when user selects: Unlicensed.
 function renderLicenseLink(license) {
   if (license === 'Unlicensed') {
