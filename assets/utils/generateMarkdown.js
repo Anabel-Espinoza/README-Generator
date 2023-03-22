@@ -45,7 +45,7 @@ ${data.projectDesc}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits) ${renderLicenseLink(data.license)}
-- [How to Contribute](#contribute)
+- [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
 
