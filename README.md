@@ -8,13 +8,13 @@ This README Generator helps the user to create a complete README file to add to 
 
 ## Table of Contents
 
-- [Instalation](#installation)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
 - [Credits](#credits)
 - [License](#license)
 
-## Instalation
+## Installation
 
 Clone the repository and start the command line inside the assets folder.
 To get required npm modules, user must enter: "npm i" in the terminal.
