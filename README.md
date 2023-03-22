@@ -24,9 +24,9 @@ To get required npm modules, user must enter: "npm i" in the terminal.
 
 To start the application, the user must enter "npm index". A series of questions will be prompted and user must answer all of them to be able to generate a complete README file. After the last question has been answered, a message will appear in the terminal, letting the user know the file has been created.
 
-**Video of the application functionality:** https://drive.google.com/file/d/1yer9hAGI7YnKj8fgAz5ggGbuZX3zLnsB/view
+**Video of the application functionality:** https://drive.google.com/file/d/1VFLzBncwlLG7l13i6vYUFP47roEcVlml/view
 
-**Video of the application funcionality with Unlicensed Project (last part ONLY):** https://drive.google.com/file/d/1vyKapag-GdCgm9GA2Nt6Ki4k77z4NV7B/view
+**Video of the application funcionality with Unlicensed Project (last part ONLY):** https://drive.google.com/file/d/1UZHaiTLMwA_oQCEun2Kr6I3621bE7PJx/view
 
 
 ## Credits
