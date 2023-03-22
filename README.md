@@ -16,30 +16,30 @@ This README Generator helps the user to create a complete README file to add to 
 
 ## Instalation
 
-The application runs in the command line. 
+Clone the repository and start the command line inside the assets folder.
 To get required npm modules, user must enter: "npm i" in the terminal.
-To start the application, user must enter "npm index".
 
 ## Usage
 
-After the user starts the application, they must answer to the prompted requirements to be able to generate a complete README file. After the last question has been asnwered, a message will appear in the terminal, letting the user know the file has been created.
+To start the application, user must enter "npm index". The user must answer to the prompted questions to be able to generate a complete README file. After the last question has been asnwered, a message will appear in the terminal, letting the user know the file has been created.
 
-Video of the application functionality:
-![Application Functionality](https://drive.google.com/file/d/1EM3DxXIcf_chmocYBzZoF69xbA52QeBJ/view)
+Video of the application functionality: https://drive.google.com/file/d/1yer9hAGI7YnKj8fgAz5ggGbuZX3zLnsB/view
+
+Video of the application funcionality with Unlicensed Project (last part ONLY): https://drive.google.com/file/d/1vyKapag-GdCgm9GA2Nt6Ki4k77z4NV7B/view
+
 
 ## Credits
 
 - Created by: Anabel Espinoza (https://github.com/Anabel-Espinoza)
 
-- Starting Code provided by GA Tech Bootcamp. 
-
-- Coding guidance: Mini-Project NodeJS unit(Generate HTML file from user input).
+- Starter Code provided by GA Tech Bootcamp. 
 
 - Sources: 
     * 'Professional README Guide' (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
     * 'Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
     * 'How to Create Interactive Command-Line Prompts with Inquirer.js' (https://www.npmjs.com/package/inquirer?activeTab=readme#questions)
     * 'Open source license usage on GitHub.com' (https://github.blog/2015-03-09-open-source-license-usage-on-github-com/)
+    * 'Markdown License badges' (https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 - npm: Inquirer v8.2.4
 

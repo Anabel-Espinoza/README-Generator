@@ -60,7 +60,7 @@ ${data.usage}
 
 ## Credits
 
-Created by: ${data.creator} (https://github.com/${data.gitHub})
+Created by: ${data.creator} (https://github.com/${data.gitHub})\n
 Collaborations: ${data.credits}
 ${renderLicenseSection(data.license)}
 ## How to Contribute
@@ -73,7 +73,7 @@ ${data.tests}
 
 ## Questions
 
-Please submit your questions or comments to my email ${data.email}.
+Please submit your questions or comments to my email ${data.email}.\n
 Access my gitHub profile here: https://github.com/${data.gitHub}
 `
 }
